@@ -276,13 +276,14 @@ body {
     margin: 20px;
     width: 400px;
     flex-grow: 1;
+    transition: 0.3s;
 }
 .card h3{
     margin-bottom: 1rem;
 }
 .card:hover{
-    background-color: pink;
-    transition: 0.3s;
+    background-color: #444;
+    color: white;
     scale: 1.02;
 }
 /* Intro and Service Responsiveness */
@@ -328,7 +329,12 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
+    transition: 1s;
+}
+.trusted-by-card:hover{
+    scale: 1.2;
+    background-color: #f4f4f4;
+
 }
 .trusted-by-profile{
     display: flex;
