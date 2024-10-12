@@ -183,7 +183,7 @@ body {
     border: 1px solid white;
 }
 .btn:hover{
-    background-color: orange;
+    background-color: blue;
     transition: 0.3s;
 }
 
@@ -274,7 +274,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    width: 400px;
+    width: 420px;
     flex-grow: 1;
     transition: 0.3s;
 }
@@ -307,95 +307,133 @@ body {
     }
  }
 
-/* Trusted Companies Section */
-.trusted-by-sec {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.trusted-by-cards {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.trusted-by-card {
-    background-color: #fff;
-    padding: 1rem;
-    width: 350px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: 1s;
-}
-.trusted-by-card:hover{
-    scale: 1.2;
-    background-color: #f4f4f4;
+/* Our Clients Section */
+.our-clients{
+    max-width: 90%;
+    margin: 0 auto;
 
 }
-.trusted-by-profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.our-clients-container{
+    margin: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
-@media screen and (max-width:768px) {
-    .trusted-by-sec{
-        padding: 1rem;
+.our-client-card{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    transition: 0.6s;
+}
+.our-client-card:hover{
+    transform: rotateY(360deg);
+    background-color:  #1F3A93;
+    color: lightgray;
+}
+.our-client-card img{
+    max-width: 70px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .our-clients-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 576px) {
+        .our-clients-container{
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
-/* Trusted by Section ends here */
+/* Our Clients Section ends here */
 
 /* CTA Section */
 .cta {
     padding: 2rem;
-    background-color: #007BFF;
-    color: white;
+    background-color: #f4f4f4;
+    /* background-color: #007BFF; */
+    color: black;
     text-align: center;
 }
-.interested-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.interested-container > div{
-    margin-top: 15px;
-    max-width: 350px;
-    flex-grow: 1;
-}
-.third-btn{
-    padding: 10px 15px;
+.third-btn {
+    padding: 20px 30px;
     margin-top: 30px;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     border: 1px solid blue;
     transition: 0.3s;
     background: linear-gradient(to right, blue, rgb(187, 35, 190));
     border-radius: 5px;
     color: white;
-  
+    font-size: 18px;
 }
 
-.third-btn:hover{
+.third-btn:hover {
     text-decoration: underline;
     scale: 1.02;
 }
-@media screen and (max-width:768px) {
-    .cta{
-       padding: 15px; 
-    }
-}
 /* Footer */
+footer{
+    background-color: #333;
+}
 .footer {
-    padding: 1rem;
-    background-color: #000;
+    padding: 2.5rem;
     color: white;
-    text-align: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 300px;
+    gap: 20px;
+
+}
+.footer address{
+    color: lightgray;
+}
+.foo-service-container a{
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+    line-height: 1.8;
+    transition: 0.3s;
+}
+.foo-service-container a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+/* Subscribe email form */
+.subs-email{
+    padding: 8px 16px;
+    font-size: 18px;
+}
+.subs-btn{
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.foo-social-media a{
+    color: white;
+    font-size: 28px;
+    padding: 8px;
+}
+/* Footer Responsiveness */
+@media screen and (max-width: 768px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 576px) {
+        .footer{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+}
+/* Copyrights container */
+.copyright-container{
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
 }
