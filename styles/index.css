@@ -375,6 +375,7 @@ body {
 .third-btn:hover {
     text-decoration: underline;
     scale: 1.02;
+    cursor: pointer;
 }
 /* Footer */
 footer{
