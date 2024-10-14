@@ -146,7 +146,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: #999;
     text-align: center;
     padding: 0 50px;
 }
@@ -165,7 +165,7 @@ body {
     border-left: none;
 }
 .hero-content h1{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
